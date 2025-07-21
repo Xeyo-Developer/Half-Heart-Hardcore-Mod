@@ -13,7 +13,7 @@ replay_*.log
 *.hprof
 *.jfr
 
-# Idea
+# IntelliJ IDEA
 .idea/
 *.iml
 *.ipr
