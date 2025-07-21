@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "half-heart-hardcore-mod",
+  "version": "${version}",
+  "name": "Half-Heart Hardcore Mod",
+  "description": "",
+  "authors": [
+    "Xeyo"
+  ],
+  "contact": {
+    "sources": "https://github.com/Xeyo-Developer/Half-Heart-Hardcore-Mod",
+    "issues": "https://github.com/Xeyo-Developer/Half-Heart-Hardcore-Mod/issues"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "half-heart-hardcore-mod.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=1.20.5"
+  }
+}

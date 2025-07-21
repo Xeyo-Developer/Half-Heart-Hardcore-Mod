@@ -1,0 +1,24 @@
+package dev.xeyo.half_heart_hardcore_mod.mixin;
+
+import net.minecraft.entity.*;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.world.World;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.*;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import java.util.Objects;
+
+@Mixin(PlayerEntity.class)
+public abstract class PlayerEntityMixin extends LivingEntity {
+    protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
+        super(entityType, world);
+    }
+
+    @Inject(method = "<init>", at = @At(value = "TAIL"))
+    private void setMaxHealth(CallbackInfo ci) {
+        Objects.requireNonNull(this.getAttributeInstance(EntityAttributes.MAX_HEALTH)).setBaseValue(1);
+        this.setHealth(this.getMaxHealth());
+    }
+}

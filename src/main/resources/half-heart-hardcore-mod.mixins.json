@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "dev.xeyo.half_heart_hardcore_mod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "LevelInfoMixin",
+    "PlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
