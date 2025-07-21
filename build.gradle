@@ -1,21 +1,23 @@
 plugins {
-    id 'fabric-loom' version '1.6-SNAPSHOT' apply false
+    id 'fabric-loom' version '1.5-SNAPSHOT'
 }
 
 version = project.mod_version
+group = project.maven_group
 
-allprojects {
-    apply plugin: 'fabric-loom'
+repositories {
+    maven { url 'https://maven.fabricmc.net/' }
+}
 
-    dependencies {
-        minecraft "com.mojang:minecraft:${project.minecraft_version}"
-        mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-        modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
     }
-
-    afterEvaluate {
-        genSourcesWithVineflower {
-            enabled = false
-        }
-    }
+    withSourcesJar()
 }
