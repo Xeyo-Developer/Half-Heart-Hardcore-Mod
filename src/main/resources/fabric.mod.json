@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "half-heart-hardcore-mod",
+  "id": "half-heart-hardcore",
   "version": "${version}",
-  "name": "Half-Heart Hardcore Mod",
-  "description": "",
+  "name": "Half-Heart Hardcore",
+  "description": "Half-Heart Hardcore - mod that makes all worlds hardcore and gives the player half-a-heart max health.",
   "authors": [
     "Xeyo"
   ],
@@ -14,7 +14,7 @@
   "license": "MIT",
   "environment": "*",
   "mixins": [
-    "half-heart-hardcore-mod.mixins.json"
+    "half-heart-hardcore.mixins.json"
   ],
   "depends": {
     "minecraft": "1.21.8"

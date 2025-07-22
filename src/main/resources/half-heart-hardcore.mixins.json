@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "dev.xeyo.half_heart_hardcore_mod.mixin",
+  "package": "dev.xeyo.half_heart_hardcore.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "LevelInfoMixin",

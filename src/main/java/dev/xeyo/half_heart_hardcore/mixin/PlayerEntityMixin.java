@@ -1,4 +1,4 @@
-package dev.xeyo.half_heart_hardcore_mod.mixin;
+package dev.xeyo.half_heart_hardcore.mixin;
 
 import net.minecraft.entity.*;
 import net.minecraft.entity.attribute.EntityAttributes;
