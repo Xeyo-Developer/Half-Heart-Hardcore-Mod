@@ -17,6 +17,6 @@
     "half-heart-hardcore-mod.mixins.json"
   ],
   "depends": {
-    "minecraft": ">=1.20.5"
+    "minecraft": "1.21.8"
   }
 }
