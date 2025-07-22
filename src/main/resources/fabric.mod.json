@@ -17,6 +17,7 @@
     "half-heart-hardcore.mixins.json"
   ],
   "depends": {
-    "minecraft": "1.21.8"
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21"
   }
 }
